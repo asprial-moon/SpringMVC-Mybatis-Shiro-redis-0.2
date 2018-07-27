@@ -30,6 +30,9 @@ public class UserManager {
 	 */
 	public static String md5Pswd(String email ,String pswd){
 		pswd = String.format("%s#%s", email,pswd);
+		System.out.println("///////////////////////////////////////////////////");
+		System.out.println("\t\t\t"+pswd);
+		System.out.println("///////////////////////////////////////////////////");
 		pswd = MathUtil.getMD5(pswd);
 		return pswd;
 	}

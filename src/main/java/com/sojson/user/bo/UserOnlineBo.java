@@ -7,7 +7,7 @@ import com.sojson.common.model.UUser;
 /**
  * Session  + User Bo
  * @author sojson.com
- *
+ * 在线用户详情Bean
  */
 public class UserOnlineBo extends UUser implements Serializable {
 
