@@ -73,4 +73,5 @@ public class CustomShiroSessionDAO extends AbstractSessionDAO{
     @Override  
     protected Session doReadSession(Serializable sessionId) {  
         return getShiroSessionRepository().getSession(sessionId);  
-    } }
+    } 
+}

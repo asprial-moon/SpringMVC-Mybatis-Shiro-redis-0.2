@@ -103,7 +103,12 @@ public class TokenManager {
 	public static UUser login(UUser user,Boolean rememberMe){
 		ShiroToken token = new ShiroToken(user.getEmail(), user.getPswd());
 		token.setRememberMe(rememberMe);
+		
+		System.out.println("///////////////////////////////////////////");
+		System.out.println("this is TokenManager.login(), "+token);
+		System.out.println("///////////////////////////////////////////");
 		SecurityUtils.getSubject().login(token);
+		
 		return getToken();
 	}
 

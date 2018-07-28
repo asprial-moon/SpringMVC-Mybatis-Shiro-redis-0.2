@@ -78,6 +78,10 @@ public class UserCoreController extends BaseController {
 		//根据当前登录的用户帐号 + 老密码，查询。
 		String email = TokenManager.getToken().getEmail();
 				pswd = UserManager.md5Pswd(email, pswd);
+				
+		System.out.println("this is com.sojson.userController UserLoginController,line:82");
+		System.out.println("\t"+email+"\t"+pswd);
+				
 		UUser	user = userService.login(email, pswd);
 		
 		if("admin".equals(email)){
